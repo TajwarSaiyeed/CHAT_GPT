@@ -18,7 +18,7 @@ const app = express();
 // Use cors to allow cross-origin requests
 app.use(
   cors({
-    origin: "*",
+    origin: "https://chat-gpt-client-abid.vercel.app/",
   })
 );
 
