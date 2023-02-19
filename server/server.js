@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { OpenAIApi, Configuration } = require("openai");
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 require("dotenv").config();
 
 // Create a new instance of the OpenAI API configuration
@@ -55,5 +55,5 @@ app.post("/", async (req, res) => {
 
 // Listen on port 5000
 app.listen(PORT, () => {
-  console.log("Server is running on port http://localhost:5000");
+  console.log(`Server is running on port http://localhost:${PORT}`);
 });
