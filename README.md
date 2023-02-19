@@ -1,6 +1,8 @@
 ```
 CHAT_GPT
+├─ .gitignore
 ├─ client
+│  ├─ .gitignore
 │  ├─ assets
 │  │  ├─ bot.svg
 │  │  ├─ send.svg
@@ -13,6 +15,10 @@ CHAT_GPT
 │  │  └─ favicon.ico
 │  ├─ script.js
 │  └─ style.css
-└─ README.md
+├─ README.md
+└─ server
+   ├─ package-lock.json
+   ├─ package.json
+   └─ server.js
 
 ```
