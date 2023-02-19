@@ -44,9 +44,9 @@ function chatStripe(isAi, value, uniqueId) {
           <div class="profile">
             <img src="${isAi ? bot : user}" alt="${isAi ? "bot" : "user"}" />
           </div>
-          <div class="message" id="${uniqueId}">
+          <pre class="message" id=${uniqueId}>
            ${value}
-          </div>
+          </pre>
         </div>
       </div>
     `;
@@ -64,8 +64,8 @@ const handleSubmit = async (e) => {
   form.reset();
 
   // bot's chatstripe
-
   const uniqueId = generateUniqueId();
+
   chatContainer.innerHTML += chatStripe(true, " ", uniqueId);
 
   chatContainer.scrollTop = chatContainer.scrollHeight;
