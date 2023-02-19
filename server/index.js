@@ -16,7 +16,11 @@ const openai = new OpenAIApi(configuration);
 const app = express();
 
 // Use cors to allow cross-origin requests
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 // Use express.json() to parse JSON bodies
 app.use(express.json());
